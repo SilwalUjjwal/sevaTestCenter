@@ -1,0 +1,199 @@
+.row {
+  max-width: 100%; 
+}
+
+.menu {
+  background-color: #292c2f;
+  padding: 1.5rem 3rem;
+  height: auto; 
+}
+
+  .menu .inline-list {
+    text-align: center; 
+}
+
+    .menu .inline-list li {
+      float: none;
+      display: inline-block; 
+}
+    .menu .inline-list a {
+      color: #fff;
+      padding-bottom: 0.5rem; 
+}
+
+      .menu .inline-list a:hover {
+        color: #fff;
+        transform: scale(0.8);
+        transition: all .3s ease-in-out; 
+}
+
+    .menu .inline-list .active a {
+      color: #fff; 
+      border-bottom: 5px solid #fff;
+	  
+}
+
+  .menu .account {
+    position: absolute;
+    top: 3%;
+    right: 3%; 
+}
+
+    .menu .account a, .menu .account i {
+      color: #fff; 
+}
+
+  @media only screen and (min-width: 40.063em) {
+    .menu {
+      height: 5rem; 
+	}
+
+      .menu .inline-list {
+        float: left;
+        margin: 0 0 0 1.5rem; 
+	}
+
+      .menu a:hover {
+        border-bottom: 2px solid #fff; } 
+}
+
+  .menu .account-action {
+    float: right;
+    margin: -.75rem 0 0 0; 
+}
+
+    .menu .account-action li {
+      margin-left: .2rem; 
+}
+
+    .menu .account-action a {
+      padding: 0.75rem 1rem; 
+}
+
+    .menu .account-action a.signup {
+      font-weight: bold;
+      background-color: #3d4146;
+      border-radius: 3px; 
+}
+
+.name {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin: 0 0 1rem 0;
+  color: #fff; 
+}
+
+  .name i {
+    color: #87d37c;
+    margin-right: 0.5rem; 
+}
+
+  @media only screen and (min-width: 40.063em) {
+    .name {
+      float: left; 
+	} 
+}
+
+	  
+.button-group {
+  position: relative;
+  display: inline-block;
+  margin: 1rem 0; 
+}
+
+  .button-group:before {
+    content: attr(data-grouptype);
+    z-index: 99999;
+    color: #999;
+    display: block;
+    font-size: 1rem;
+    padding: 0.25em;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: 48.5%;
+    top: 0.35rem; 
+}
+
+  .button-group button + button {
+    margin-left: 5px; 
+}
+
+
+	
+.service {
+  width: 100%;
+  height: 320px;
+  margin: 80px 0;
+  text-align: center;
+  border: 1px solid #ddd;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; 
+}
+  .service .service-icon-box {
+    position: relative;
+    top: 100px;
+    display: inline-block;
+    margin-bottom: 40px;
+    padding: 10px;
+    background: white;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+}
+  .service .service-heading {
+    position: relative;
+    top: 80px;
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+}
+  .service .service-description {
+    width: 80%;
+    margin: 0 auto;
+    opacity: 0;
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0); 
+}
+  .service .service-icon-box > img.service-icon {
+    width: 120px; 
+}
+  .service:hover {
+    border-color: #00a8ff; 
+}
+  .service:hover .service-icon-box {
+    top: -30px; 
+}
+  .service:hover .service-heading {
+    top: -30px; 
+}
+  .service:hover .service-description {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); 
+}
+
+.callout {
+    margin: 0 0 1rem;
+    padding: 1rem;
+    border: 1px solid hsla(0,0%,4%,.25);
+    border-radius: 0;
+    position: relative;
+    color: #0a0a0a;
+    background-color: #fff;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding:5px;
+}
+
+#eCat >input{
+  width:100%;
+  height: 100%;
+  font-weight: bold;
+  border: none;
+}

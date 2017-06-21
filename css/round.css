@@ -1,0 +1,192 @@
+@keyframes getcrossedpos {
+  45% {
+    transform: rotate(0);
+    top: 33%;
+  }
+  50% {
+    transform: rotate(0);
+    top: 45%;
+  }
+  100% {
+    transform: rotate(45deg);
+    top: 45%;
+  }
+}
+@keyframes straightenpos {
+  0% {
+    transform: rotate(45deg);
+    top: 45%;
+  }
+  55% {
+    transform: rotate(0);
+    top: 33%;
+  }
+  100% {
+    transform: rotate(0);
+    top: 33%;
+  }
+}
+@keyframes getcrossedneg {
+  45% {
+    transform: rotate(0);
+    top: 60%;
+  }
+  50% {
+    transform: rotate(0);
+    top: 45%;
+  }
+  100% {
+    transform: rotate(-45deg);
+    top: 45%;
+  }
+}
+@font-face {
+  font-family: "SSSocialCircle";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ss-social-circle.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+.ss-icon {
+  font-family: "SSSocialCircle";
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#roundnav {
+  position: absolute;
+  left: 43%;
+  top: 40%;
+  width: 7rem;
+  height: 7rem;
+  z-index: initial;
+  line-height: 7rem;
+  border-radius: 50%;
+  transition: .3s;
+  background: #004664;
+  outline: none;
+}
+#roundnav:hover, #roundnav:focus {
+  background: #333;
+}
+#roundnav:before, #roundnav:after, #center-bar{
+  position: absolute;
+  left: 27%;
+  content: "";
+  display: block;
+  width: 46%;
+  top: 33%;
+  height: 8%;
+  background: #fff;
+  transform-origin: center;
+  transition: .5s;
+}
+#center-bar {
+  top: 46%;
+}
+#roundnav:after {
+  top: 60%;
+}
+#roundnav.clicked:before {
+  animation: getcrossedpos .6s forwards;
+}
+#roundnav.clicked:after {
+  animation: getcrossedneg .6s forwards;
+}
+#roundnav.clicked #center-bar {
+  opacity: 0;
+}
+#roundnav:hover {
+  cursor: pointer;
+}
+#roundnav.clicked {
+  background: #004664;
+  outline: none;
+}
+#roundnav a {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: #004664;
+  text-align: center;
+  line-height: 1.5;
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  font-size: 4rem;
+  text-align: center;
+  left: 1rem;
+  top: 1rem;
+  transition: .4s;
+  z-index: -1;
+}
+#roundnav.clicked a{
+ z-index:1;
+}
+#roundnav a:hover, #roundnav a:focus {
+  background-color: #333;
+}
+#roundnav a:nth-child(1) {
+  transform: rotate(-50deg);
+}
+#roundnav.clicked a:nth-child(1) {
+  transform: rotate(-50deg) translateX(7rem) rotate(--50deg);
+}
+#roundnav a:nth-child(2) {
+  transform: rotate(0deg);
+}
+#roundnav.clicked a:nth-child(2) {
+  transform: rotate(0deg) translateX(7rem) rotate(-0deg);
+}
+#roundnav a:nth-child(3) {
+  transform: rotate(50deg);
+}
+#roundnav.clicked a:nth-child(3) {
+  transform: rotate(50deg) translateX(7rem) rotate(-50deg);
+}
+#roundnav a:nth-child(4) {
+  transform: rotate(100deg);
+}
+#roundnav.clicked a:nth-child(4) {
+  transform: rotate(100deg) translateX(7rem) rotate(-100deg);
+}
+#roundnav a:nth-child(5) {
+  transform: rotate(150deg);
+}
+#roundnav.clicked a:nth-child(5) {
+  transform: rotate(150deg) translateX(7rem) rotate(-150deg);
+}
+#roundnav a:nth-child(6) {
+  transform: rotate(200deg);
+}
+#roundnav.clicked a:nth-child(6) {
+  transform: rotate(200deg) translateX(7rem) rotate(-200deg);
+}
+#roundnav a:nth-child(7) {
+  transform: rotate(250deg);
+}
+#roundnav.clicked a:nth-child(7) {
+  transform: rotate(250deg) translateX(7rem) rotate(-250deg);
+}
+#roundnav a:nth-child(8) {
+  transform: rotate(300deg);
+}
+#roundnav.clicked a:nth-child(8) {
+  transform: rotate(300deg) translateX(7rem) rotate(-300deg);
+}
+#roundnav a:nth-child(9) {
+  transform: rotate(350deg);
+}
+#roundnav.clicked a:nth-child(9) {
+  transform: rotate(350deg) translateX(7rem) rotate(-350deg);
+}
